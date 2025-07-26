@@ -528,10 +528,7 @@ aside {
         font-size: clamp(1.1rem, 3.5vw, 2rem);
     }
 
-    & button {
-        all: unset;
-        cursor: pointer;
-        
+    & a {
         background-color: var(--color-accent);
     
         border-radius: 5px;
@@ -539,6 +536,8 @@ aside {
         color: var(--color-white);
     
         text-align: center;
+        text-decoration: none;
+        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     
         display: flex;
         justify-content: center;
@@ -548,9 +547,9 @@ aside {
         position: relative;
     
         padding: 10px 12px;
-        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     
         overflow: hidden;
+        cursor: pointer;
         transition: background-color 0.3s;
 
         &::before {
