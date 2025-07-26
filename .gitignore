@@ -1,0 +1,12 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore folders
+node_modules/
+dist/
+.vscode/
+
+# Ignore secret config
+.env
+*.key
