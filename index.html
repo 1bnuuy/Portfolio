@@ -1,0 +1,469 @@
+<!--26/3/2025 12:40 PM-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    
+    <!--Fonts library-->
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--Fonts library-->
+
+    <title>Portfolio</title>
+</head>
+<body onload="reset()">
+    <header class="header" id="header">
+        <div class="left" id="left">
+            <a href="#home">Bnuuy<span>.</span></a>
+        </div>
+
+        <nav class="right" id="right">
+            <a href="#home">Home</a>
+            <a href="#about">Profile</a>
+            <a href="#services">Services</a>
+            <a href="#quali">Education</a>
+            <a href="#work">Projects</a>
+            <a href="#contact">Contact</a>
+
+            <button onclick="ThemeSwitch()">
+                <i data-theme class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+
+        <button class="menu-burger" onclick="Menu()"><i id="menu-burger" class="fa-solid fa-bars"></i></button>
+
+        <div class="menu" id="menu">
+            <div class="menu-top">
+                <a href="#home">Bnuuy<span>.</span></a>
+                <i class="fa-solid fa-xmark" onclick="Menu()"></i>
+                
+            </div>
+            
+            <div class="menu-links">
+                <a href="#home">
+                    <i class="fa fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#about">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+
+                <a href="#services">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <span>Services</span>
+                </a>
+
+                <a href="#quali">
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Education</span>
+                </a>
+
+                <a href="#work">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Projects</span>
+                </a>
+
+                <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+
+                <div class="mode">
+                    <button onclick="ThemeSwitch()">
+                        <i data-theme class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <p>© 2025 Nguyen Tuan Duong. All rights reserved.</p>
+            </div>
+        </div>
+    </header>
+
+    <!--Scrapped Idea (Unneccessary 13/7/2025 11:28PM)-->
+    <!-- <aside class="aside" id="aside">
+        <span class="vert"></span>
+        <a href="https://www.facebook.com/iiOwl" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.facebook.com/iiOwl" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-reddit"></i>
+        </a>
+        <span class="vert"></span>
+    </aside> -->
+
+    <main class="main">
+        <section class="intro" id="home">
+            <h1>NGUYEN TUAN DUONG</h1>
+            <h2>Fullstack Web Developer</h2>
+            <button href="CV.pdf" download="CV"><span>Download CV</span></button>
+        </section>
+
+        <section class="about" id="about">
+            <article class="WhoIAm">
+                <p class="sub-title">About me</p>
+                <h1 class="name">Great products aren't just built — they're carefully crafted, one thoughtful step at a time!</h1>
+                <p class="about-desc"><span class="quotationMark">&#10077;</span> I specialize in building responsive, user-friendly websites using modern frontend and backend technologies, with a focus on delivering clean code and smooth user experiences.</p>
+                
+                <div class="about-details">
+                    <p>
+                        <span class="info-title">Name</span>
+                        <span class="actual-info">Nguyen Tuan Duong</span>
+                    </p>
+
+                    <p>
+                        <span class="info-title">Nationality</span>
+                        <span class="actual-info">Viet Nam</span>
+                    </p>
+
+                    <p>
+                        <span class="info-title">Languages</span>
+                        <span class="actual-info">Vietnamese <br> English</span>
+                    </p>
+
+                    <p>
+                        <span class="info-title">Email</span>
+                        <span class="actual-info">quangkindred@gmail.com</span>
+                    </p>
+
+                    <p>
+                        <span class="info-title">Phone</span>
+                        <span class="actual-info">(+84) 904 233 016</span>
+                    </p>
+                </div>
+            </article>
+            
+            <article class="headshot">
+                <img alt="Nguyen Tuan Duong" src="./images/Pee_bgremoved.webp">
+            </article>
+        </section>
+
+        <section class="overview" id="overview">
+            <article class="holder">
+                <i class="fa-regular fa-map"></i>
+                <div class="holder-content">
+                    <h1>Planning</h1>
+                    <p>Set clear goals and map out the project path.</p>
+                    <i class="fa-regular fa-window-minimize"></i>
+                </div>
+            </article>
+
+            <article class="holder">
+                <i class="fa-regular fa-hourglass-half"></i>
+                <div class="holder-content">
+                    <h1>Analysis</h1>
+                    <p>Gather insights to guide smart decisions.</p>
+                    <i class="fa-regular fa-window-minimize"></i>
+                </div>
+            </article>
+
+            <article class="holder">
+                <i class="fa-regular fa-comments"></i>
+                <div class="holder-content">
+                    <h1>Communication</h1>
+                    <p>Stay aligned through clear, ongoing collaboration.</p>
+                    <i class="fa-regular fa-window-minimize"></i>
+                </div>
+            </article>
+
+            <article class="holder">
+                <i class="fa-regular fa-handshake"></i>
+                <div class="holder-content">
+                    <h1>Launch</h1>
+                    <p>Deliver and deploy a polished, ready product.</p>
+                    <i class="fa-regular fa-window-minimize"></i>
+                </div>
+            </article>
+        </section>
+
+        <section class="services" id="services">
+            <p class="sub-title">BEST FEATURES</p>
+            <h1 data-title="Services" class="title">Services</h1>
+            <p class="title-desc">I put your ideas into <span>an amazing website project</span> that speaks for you.</p>
+
+            <article class="services-container">
+                <div class="card">
+                    <i class="fa-regular fa-chart-bar"></i>
+                    <h1>Digital Strategy</h1>
+                    <p>Creating tailored plans to optimize online campaigns, align digital goals across channels.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-regular fa-eye"></i>
+                    <h1>UI Design</h1>
+                    <p>Focusing on understanding user behavior and translating that into interfaces.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-regular fa-user"></i>
+                    <h1>UX Design</h1>
+                    <p>Designing digital experiences that feel natural and intuitive for your users.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Frontend Coding</h1>
+                    <p>Designing websites that not only look amazing but also perform seamlessly across all devices.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <h1>Social Media</h1>
+                    <p>Creating engaging content and maintaining consistent branding, building strong audience connection.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h1>Design Concept</h1>
+                    <p>Transforming ideas into structured visual systems that support usability, and aesthetic impact.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="quali" id="quali">
+            <article class=quali-left>
+                <h1>0<span>.</span></h1>
+                <p>Years <br> of <br> Experience</p>
+            </article>
+            
+            <article class="quali-right">
+                <div class="selection" id="selection">
+                    <a class="active" onclick="Show(0)">Experience</a>
+                    <a onclick="Show(1)">Education</a>
+                    <a onclick="Show(2)">Skills</a>
+                    <a onclick="Show(3)">Achievements</a>
+                </div>
+
+                <!--Experience-->
+                <div class="box">
+                    <div class="content">
+                        <h3>11/2024 - 1/2025</h3>
+                        <h1>Teaching Assisstant</h1>
+                        <p>&#9679 <span>at Scots English Center</span></p>
+                    </div>
+
+                    <div class="content">
+                        <h3>3/2025 - 5/2025</h3>
+                        <h1>TA and Grammar Teacher</h1>
+                        <p>&#9679 <span>at Ames English Center</span></p>
+                    </div>
+                </div>
+
+                <!--Education-->
+                <div class="box">
+                    <div class="content">
+                        <h3>2020</h3>
+                        <h1>Frontend Development</h1>
+                        <p>&#9679 <span>W3Schools.com, MDN Web Docs...</span></p>
+                    </div>
+
+                    <div class="content">
+                        <h3>2024</h3>
+                        <h1>IT and Digital Transformation</h1>
+                        <p>&#9679 <span>at National Economics University</span></p>
+                    </div>
+                </div>
+
+                <!--Skills-->
+                <div class="box skills">
+                    <div class="lang">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="lang">
+                        <i class="fab fa-css3"></i>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="lang">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="lang">
+                        <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Tailwind CSS icon</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path></g></svg>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+
+                <!--Achievements-->
+                <div class="box">
+                    <div class="content">
+                        <h3>2023</h3>
+                        <h1>IELTS 7.0</h1>
+                        <p>&#9679 <span>at British Council</span></p>
+                    </div>
+
+                    <div class="content">
+                        <h3>2023</h3>
+                        <h1>Informatics Consolation Prize</h1>
+                        <p>&#9679 <span>School-level award, at Thang Long Highschool</span></p>
+                    </div>
+
+                    <div class="content">
+                        <h3>2025</h3>
+                        <h1>Academic Excellence Scholarship</h1>
+                        <p>&#9679 <span>at National Economics University</span></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="work" id="work">
+            <p class="sub-title">My work</p>
+            <h1 data-title="projects" class="title">Projects</h1>
+
+            <article class="projects">
+                <div class="project-label">
+                    <h3>01<span class="date">3/3/2025</span></h3>
+                    <h1>English Dictionary</h1>
+                    <p class="description">A clean, fast, and responsive web app for looking up English word definitions, phonetics, and usage—perfect, containing 800+ words ranging from B2 to C2 for learners and everyday users.</p>
+                    <h2 class="lang-used">HTML 5, CSS 3, Javascript</h2>
+                    <span class="slice"></span>
+                    <a href="../(3) My Dictionary/main.html" target="_blank">Check it out &rarr;</a>
+                </div>
+
+                <div class="project-img">
+                    <img alt="English Dictionary" loading="lazy" src="./images/MyDict.webp">
+                </div> 
+            </article>
+
+            <article class="projects">
+                <div class="project-label">
+                    <h3>02<span class="date">23/4/2025</span></h3>
+                    <h1>Cozy Critter Corners</h1>
+                    <p class="description">A site dedicated to creating cozy, pet-friendly spaces in homes for pet owners who want to make their homes both stylish and comfortable for their furry friends.</p>
+                    <h2 class="lang-used">HTML 5, CSS 3, Javascript</h2>
+                    <span class="slice"></span>
+                    <a href="#" target="_blank">Check it out &rarr;</a>
+                </div>
+
+                <div class="project-img">
+                    <img alt="Cozy Critter Corners" loading="lazy" src="./images/2nd-Project.webp">
+                </div> 
+            </article>
+
+            <article class="projects">
+                <div class="project-label">
+                    <h3>03<span class="date">15/7/2025</span></h3>
+                    <h1>Destroy Toxic Teamers</h1>
+                    <p class="description">A project made with passion.</p>
+                    <h2 class="lang-used">HTML 5, CSS 3, Javascript</h2>
+                    <span class="slice"></span>
+                    <a href="#" target="_blank">Check it out &rarr;</a>
+                </div>
+
+                <div class="project-img">
+                    <img alt="idk" loading="lazy" src="./images/bg.webp">
+                </div> 
+            </article>
+
+            <article class="projects">
+                <div class="project-label">
+                    <h3>04<span class="date">17/5/2025</span></h3>
+                    <h1>RAAAAAAAAAAH</h1>
+                    <p class="description">A project made with passion.</p>
+                    <h2 class="lang-used">HTML 5, CSS 3, Javascript</h2>
+                    <span class="slice"></span>
+                    <a href="#" target="_blank">Check it out &rarr;</a>
+                </div>
+
+                <div class="project-img">
+                    <img alt="idk" loading="lazy" src="./images/bg.webp">
+                </div> 
+            </article>
+
+            <div class="switch">
+                <button onclick="plusSwipe(-1, 'SwipeReverse')">&#10094;</button>
+                <button onclick="plusSwipe(1, 'Swipe')">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <article class="contact-wrapper">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" id="ContactForm">
+                    <input type="hidden" name="access_key" value="5a0b3487-e245-468d-b8f2-1f456a07d22e">
+
+                    <div class="input-wrapper" input-header="Full Name">
+                        <input autocorrect="off" autocapitalize="off" spellcheck="false" type="text" name="Full Name:" placeholder="John Doe" required>
+                        <i class="fa-solid fa-signature"></i>
+                    </div>
+
+                    <div class="input-wrapper" input-header="Email">
+                        <input autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="Email:" placeholder="bnuuy@example.com" required>
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+
+                    <div class="input-wrapper" input-header="Phone Number">
+                        <input autocorrect="off" autocapitalize="off" spellcheck="false" type="tel" name="Phone Number:" placeholder="+123 456 7890" required>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <textarea autocorrect="off" autocapitalize="off" spellcheck="false" name="Message:" placeholder="Show your thinking" required></textarea>
+                    <button type="submit">Send Message</button> 
+                </form>
+                
+                <div class="contact-right">
+                    <div class="contact-title">
+                        <h1>Get in touch!</h1>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-container">
+                            <i class="fa-solid fa-phone-volume"></i>
+
+                            <div class="info">
+                                <h3>Phone</h3>
+                                <p>(+84) 904 233 016</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-container">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <div class="info">
+                                <h3>Email</h3>
+                                <p>quangkindred@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-container">
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div class="info">
+                                <h3>Address</h3>
+                                <p>HH3B Linh Dam, Hoang Mai, Ha Noi, Viet Nam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <a href="https://www.reddit.com/user/Budget-Apartment9943/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-reddit"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/iiOwl" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://github.com/1bnuuy" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Nguyen Tuan Duong. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
